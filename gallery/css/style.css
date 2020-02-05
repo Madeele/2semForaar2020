@@ -1,0 +1,28 @@
+/**
+ * file: style.css
+ * purpose: styles, animation etc
+ * further development: meyer reset perhaps?
+ **/
+
+img {
+    width: 23%;
+    padding: 5px;
+    margin: auto auto auto 20px;
+    
+}
+
+
+#exhibition {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    animation-name: anim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+h2 {
+    text-align: center;
+    font-size: 30px;
+}

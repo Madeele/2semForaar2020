@@ -4,22 +4,50 @@
 /* selected colors for this project */
 $green: #1cc867;
 $white: #fff;
-
+$blue: #0000ff;
+$cta: #00ff00;
 /* nested syntax, how cool is that? */
 
-/* mixins */ 
+/* mixins */
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
 
+.box {
+    @include transform(rotate(30deg));
+    width: 99px;
+    height: 99px;
+    background-color: aqua;
+    position: relative;
+    
+}
+#box2 {
+    @include transform(rotate(10deg));
+    background-color: forestgreen;
+}
 /* scss samples */
 body {
-    background-color: $green;
-    color: #00ff00;
+    p {
+        background-color: $green;
+        color: $blue;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    a {
+        color: $cta;
+    }
 }
 
 /* nested syntax */
 main {
     p {
-        color: $white;
+        background-color: $green;
+        color: $blue;
+
     }
 }
-
-
